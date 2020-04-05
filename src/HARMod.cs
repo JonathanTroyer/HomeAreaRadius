@@ -21,5 +21,11 @@ namespace HomeAreaRadius
         {
             return "HAR_SettingsCategory".Translate();
         }
+
+        public override void WriteSettings()
+        {
+            base.WriteSettings();
+            HarmonySetup.RePatchAutoHomeAreaMaker();
+        }
     }
 }

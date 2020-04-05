@@ -70,7 +70,7 @@
     <Compile Include="src\Extensions.cs" />
     <Compile Include="src\HARMod.cs" />
     <Compile Include="src\Harmony\Patch_AutoHomeAreaMaker.cs" />
-    <Compile Include="src\Harmony\Setup.cs" />
+    <Compile Include="src\Harmony\HarmonySetup.cs" />
     <Compile Include="src\HARSettings.cs" />
   </ItemGroup>
   <ItemGroup>
