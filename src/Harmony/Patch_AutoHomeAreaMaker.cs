@@ -13,19 +13,21 @@ namespace HomeAreaRadius
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
             var codes = new List<CodeInstruction>(instructions);
-            for(var i = 0; i < codes.Count; i++)
+            for (var i = 0; i < codes.Count; i++)
             {
-                if(codes[i].opcode == OpCodes.Sub) {
-                    var nextCode = i + 1 < codes.Count ? codes[i + 1] : null;
-                    if(nextCode?.opcode == OpCodes.Ldc_I4_4)
+                if (codes[i].opcode == OpCodes.Sub && i + 1 < codes.Count)
+                {
+                    var nextCode = codes[i + 1];
+                    if (nextCode.opcode == OpCodes.Ldc_I4_4 || nextCode.opcode == OpCodes.Ldc_I4)
                     {
                         nextCode.opcode = OpCodes.Ldc_I4;
                         nextCode.operand = HARSettings.homeAreaRadius;
                     }
                 }
-                else if (codes[i].opcode == OpCodes.Add) {
-                    var prevCode = i - 1 >= 0 ? codes[i - 1] : null;
-                    if(prevCode?.opcode == OpCodes.Ldc_I4_8)
+                else if (codes[i].opcode == OpCodes.Add && i - 1 >= 0)
+                {
+                    var prevCode =  codes[i - 1];
+                    if (prevCode.opcode == OpCodes.Ldc_I4_8 || prevCode.opcode == OpCodes.Ldc_I4)
                     {
                         prevCode.opcode = OpCodes.Ldc_I4;
                         prevCode.operand = HARSettings.homeAreaRadius * 2;
@@ -48,7 +50,7 @@ namespace HomeAreaRadius
             var codes = new List<CodeInstruction>(instructions);
             for (var i = 0; i < codes.Count; i++)
             {
-                if(codes[i].opcode == OpCodes.Ldc_I4_4)
+                if (codes[i].opcode == OpCodes.Ldc_I4_4 || codes[i].opcode == OpCodes.Ldc_I4)
                 {
                     codes[i].opcode = OpCodes.Ldc_I4;
                     codes[i].operand = HARSettings.homeAreaRadius;
