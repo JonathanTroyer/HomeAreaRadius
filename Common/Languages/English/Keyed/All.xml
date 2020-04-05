@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <HAR_SettingsCategory>Home Area Radius</HAR_SettingsCategory>
+  <HAR_SettingsRadiusLabel>Radius</HAR_SettingsRadiusLabel>
+  <HAR_SettingsRadiusDescription>How many cells the home area should expand by (default 4)</HAR_SettingsRadiusDescription>
+</LanguageData>

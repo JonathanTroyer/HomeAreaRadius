@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Home Area Radius</name>
+	<author>Neptimus7</author>
+	<url>https://github.com/JonathanTroyer/HomeAreaRadius</url>
+  <supportedVersions>
+    <li>1.1</li>
+  </supportedVersions>
+  <packageId>neptimus7.homearearadius</packageId>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+	<description>
+Home Area Radius
+
+Lets you modify the amount the home area expands by
+  </description>
+</ModMetaData>
