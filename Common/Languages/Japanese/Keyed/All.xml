@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HAR_SettingsCategory>Home Area Radius</HAR_SettingsCategory>
+  <HAR_SettingsRadiusLabel>範囲</HAR_SettingsRadiusLabel>
+  <HAR_SettingsRadiusDescription>ホームエリアを拡張するマス数（デフォルトは4）</HAR_SettingsRadiusDescription>
+
+</LanguageData>
