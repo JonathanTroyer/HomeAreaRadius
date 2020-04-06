@@ -2,6 +2,6 @@
 <LanguageData>
   <HAR_SettingsCategory>Home Area Radius</HAR_SettingsCategory>
   <HAR_SettingsRadiusLabel>範囲</HAR_SettingsRadiusLabel>
-  <HAR_SettingsRadiusDescription>ホームエリアを拡張するマス数（デフォルトは4）</HAR_SettingsRadiusDescription>
+  <HAR_SettingsRadiusDescription>コロニーゾーンを拡張するマス数（デフォルトは4）</HAR_SettingsRadiusDescription>
 
 </LanguageData>
