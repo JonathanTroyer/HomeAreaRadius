@@ -16,7 +16,6 @@ namespace HomeAreaRadius
         static HarmonySetup()
         {
             harmony = new Harmony("rimworld.neptimus7.homearearadius");
-            Harmony.DEBUG = true;
             harmony.PatchAll(Assembly.GetExecutingAssembly());
 
             MarkHomeAroundThingPatchProcessor = new PatchProcessor(harmony, typeof(AutoHomeAreaMaker).GetMethod("MarkHomeAroundThing"));

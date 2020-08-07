@@ -96,6 +96,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>call $(ProjectDir)Install.bat $(ConfigurationName) "$(ProjectDir)" "$(ProjectName)" "About Common v1.2" "LoadFolders.xml"</PostBuildEvent>
+    <PostBuildEvent>call $(ProjectDir)Install.bat $(ConfigurationName) "$(ProjectDir)" "$(ProjectName)" "About Common v1.1 v1.2" "LoadFolders.xml"</PostBuildEvent>
   </PropertyGroup>
 </Project>
