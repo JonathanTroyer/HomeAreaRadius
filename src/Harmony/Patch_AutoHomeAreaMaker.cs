@@ -50,10 +50,14 @@ namespace HomeAreaRadius
             var codes = new List<CodeInstruction>(instructions);
             for (var i = 0; i < codes.Count; i++)
             {
-                if (codes[i].opcode == OpCodes.Ldc_I4_4 || codes[i].opcode == OpCodes.Ldc_I4)
+                if (codes[i].opcode == OpCodes.Ldc_I4_4 || codes[i].opcode == OpCodes.Ldc_I4 && i > 0)
                 {
-                    codes[i].opcode = OpCodes.Ldc_I4;
-                    codes[i].operand = HARSettings.homeAreaRadius;
+                    var prevCode = codes[i - 1];
+                    if (prevCode.opcode == OpCodes.Ldarg_0)
+                    {
+                        codes[i].opcode = OpCodes.Ldc_I4;
+                        codes[i].operand = HARSettings.homeAreaRadius;
+                    }
                 }
             }
 

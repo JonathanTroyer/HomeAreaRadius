@@ -5,6 +5,7 @@
 	<url>https://github.com/JonathanTroyer/HomeAreaRadius</url>
   <supportedVersions>
     <li>1.1</li>
+    <li>1.2</li>
   </supportedVersions>
   <packageId>neptimus7.homearearadius</packageId>
   <modDependencies>
