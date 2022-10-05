@@ -84,10 +84,6 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="v1.1\Assemblies\" />
-    <Folder Include="v1.2\Assemblies\" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="About\About.xml" />
     <Content Include="About\Manifest.xml" />
     <Content Include="Common\Languages\English\Keyed\All.xml" />
