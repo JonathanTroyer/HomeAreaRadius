@@ -13,7 +13,7 @@ namespace HomeAreaRadius
         {
             Listing_Standard ls = new Listing_Standard();
             ls.Begin(rect);
-            ls.SliderLabeled("HAR_SettingsRadiusLabel".Translate(), ref homeAreaRadius, 0, 10, "###", "HAR_SettingsRadiusDescription".Translate());
+            ls.SliderLabeled("HAR_SettingsRadiusLabel".Translate(), ref homeAreaRadius, 0, 10, null, "HAR_SettingsRadiusDescription".Translate());
             ls.End();
         }
 
