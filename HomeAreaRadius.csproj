@@ -89,6 +89,14 @@
     <Content Include="About\Manifest.xml" />
     <Content Include="Common\Languages\English\Keyed\All.xml" />
     <Content Include="LoadFolders.xml" />
+    <Content Include="v1.1\Assemblies\HomeAreaRadius.dll" />
+    <Content Include="v1.1\Assemblies\HomeAreaRadius.pdb" />
+    <Content Include="v1.2\Assemblies\HomeAreaRadius.dll" />
+    <Content Include="v1.2\Assemblies\HomeAreaRadius.pdb" />
+    <Content Include="v1.3\Assemblies\HomeAreaRadius.dll" />
+    <Content Include="v1.3\Assemblies\HomeAreaRadius.pdb" />
+    <Content Include="v1.4\Assemblies\HomeAreaRadius.dll" />
+    <Content Include="v1.4\Assemblies\HomeAreaRadius.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
